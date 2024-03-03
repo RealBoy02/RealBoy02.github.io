@@ -418,6 +418,7 @@
             margin: 0 10px;
             position: relative;
             overflow: hidden;
+            border: none;
         }
         
         #portfolio .fila .proyecto img {
