@@ -387,39 +387,35 @@
                 width: 85%;
             }
         }
-        /* *********************/
-        /* seccion P O R T F O L I O */
-        /* *********************/
-        
         /* sección PORTFOLIO */
-#portfolio .fila {
-    display: flex;
-    flex-wrap: wrap; /* Para permitir que los proyectos se envuelvan en filas en pantallas más pequeñas */
-    justify-content: space-between;
-    margin: 30px -10px; /* Añade márgenes negativos para compensar los márgenes de los proyectos */
-}
-
-#portfolio .fila .proyecto {
-    flex: 0 0 calc(33.33% - 20px); /* Para que los proyectos ocupen aproximadamente un tercio del ancho en pantallas grandes */
-    max-width: calc(33.33% - 20px);
-    margin: 10px; /* Espacio entre los proyectos */
-    position: relative;
-    overflow: hidden;
-    border: none;
-}
-
-@media screen and (max-width: 800px) {
-    #portfolio .fila .proyecto {
-        flex-basis: calc(50% - 20px); /* Para que los proyectos ocupen la mitad del ancho en pantallas medianas */
-        max-width: calc(50% - 20px);
-    }
-}
-@media screen and (max-width: 500px) {
-    #portfolio .fila .proyecto {
-        flex-basis: calc(100% - 20px); /* Para que los proyectos ocupen todo el ancho en pantallas pequeñas */
-        max-width: calc(100% - 20px);
-    }
-}
+        #portfolio .fila {
+            display: flex;
+            flex-wrap: wrap; /* Para permitir que los proyectos se envuelvan en filas en pantallas más pequeñas */
+            justify-content: space-between;
+            margin: 30px -10px; /* Añade márgenes negativos para compensar los márgenes de los proyectos */
+        }
+        
+        #portfolio .fila .proyecto {
+            flex: 0 0 calc(33.33% - 20px); /* Para que los proyectos ocupen aproximadamente un tercio del ancho en pantallas grandes */
+            max-width: calc(33.33% - 20px);
+            margin: 10px; /* Espacio entre los proyectos */
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+        
+        @media screen and (max-width: 800px) {
+            #portfolio .fila .proyecto {
+                flex-basis: calc(50% - 20px); /* Para que los proyectos ocupen la mitad del ancho en pantallas medianas */
+                max-width: calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 500px) {
+            #portfolio .fila .proyecto {
+                flex-basis: calc(100% - 20px); /* Para que los proyectos ocupen todo el ancho en pantallas pequeñas */
+                max-width: calc(100% - 20px);
+            }
+        }
         /* *********************/
         /* seccion C O N T A C T O */
         /* *********************/
