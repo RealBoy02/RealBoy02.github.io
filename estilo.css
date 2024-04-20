@@ -387,34 +387,68 @@
                 width: 85%;
             }
         }
-        /* sección PORTFOLIO */
+       /* *********************/
+        /* seccion P O R T F O L I O */
+        /* *********************/
+        
+        #portfolio {
+            max-width: 1100px;
+            padding: 100px 0;
+            margin: auto;
+        }
+        
+        #portfolio .titulo-seccion {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #d3d3d3;
+            text-decoration-thickness: 5px;
+        }
+        
         #portfolio .fila {
             display: flex;
-            flex-wrap: wrap; /* Para permitir que los proyectos se envuelvan en filas en pantallas más pequeñas */
             justify-content: space-between;
-            margin: 30px -10px; /* Añade márgenes negativos para compensar los márgenes de los proyectos */
+            margin: 30px 0;
         }
         
         #portfolio .fila .proyecto {
-            flex: 0 0 calc(33.33% - 20px); /* Para que los proyectos ocupen aproximadamente un tercio del ancho en pantallas grandes */
-            max-width: calc(33.33% - 20px);
-            margin: 10px; /* Espacio entre los proyectos */
+            max-width: 450px;
+            margin: 0 10px;
             position: relative;
             overflow: hidden;
             border: none;
         }
         
-        @media screen and (max-width: 800px) {
-            #portfolio .fila .proyecto {
-                flex-basis: calc(50% - 20px); /* Para que los proyectos ocupen la mitad del ancho en pantallas medianas */
-                max-width: calc(50% - 20px);
-            }
+        #portfolio .fila .proyecto img {
+            width: 100%;
+            height: 100%;
+            ;
+            filter: grayscale(1);
+            object-fit: cover;
+            transition: .5s;
         }
-        @media screen and (max-width: 500px) {
-            #portfolio .fila .proyecto {
-                flex-basis: calc(100% - 20px); /* Para que los proyectos ocupen todo el ancho en pantallas pequeñas */
-                max-width: calc(100% - 20px);
-            }
+        
+        #portfolio .fila .proyecto:hover img {
+            filter: grayscale(0);
+        }
+        
+        #portfolio .fila .proyecto .info {
+            position: absolute;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff5080;
+            width: 100%;
+            padding: 10px;
+            opacity: 0;
+            bottom: -40px;
+            transition: .5s;
+        }
+        
+        #portfolio .fila .proyecto:hover .info {
+            opacity: 1;
+            bottom: 0;
         }
         /* *********************/
         /* seccion C O N T A C T O */
