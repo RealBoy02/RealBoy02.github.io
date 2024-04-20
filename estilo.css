@@ -622,24 +622,5 @@
                 width: 100%;
                 margin-bottom: 15px;
             }
-                /* Estilos para hacer responsive */
-        @media screen and (max-width: 768px) {
-    .fila {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .proyecto {
-        flex: 0 0 50%; /* Dos proyectos por fila en pantallas pequeñas */
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .proyecto {
-        flex: 0 0 100%; /* Un proyecto por fila en pantallas aún más pequeñas */
-    }
-}
               
         }
